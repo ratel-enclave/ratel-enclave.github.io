@@ -66,7 +66,7 @@ defaults:
 markdown: kramdown
 remote_theme: chrisrhymes/bulma-clean-theme
 highlighter: rouge
-theme: bulma-clean-theme
+
 footer_menu: example_footer_menu
 
 collections:
