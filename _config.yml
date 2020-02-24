@@ -64,8 +64,9 @@ defaults:
       show_sidebar: true
 
 markdown: kramdown
+remote_theme: chrisrhymes/bulma-clean-theme
 highlighter: rouge
-
+theme: bulma-clean-theme
 footer_menu: example_footer_menu
 
 collections:
@@ -73,4 +74,4 @@ collections:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600
-    show_sidebar: false
+    show_sidebar: true
