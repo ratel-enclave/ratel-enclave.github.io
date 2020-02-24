@@ -1,5 +1,5 @@
 title: Ratel enclave
-description: Ratel is a system to run unmodified Linux binaries to run inisde Intel SGX enclaves using dynamic binary translation.
+description: Ratel is a system which provides the capability to run unmodified Linux binaries inisde Intel SGX enclaves by using dynamic binary translation.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
