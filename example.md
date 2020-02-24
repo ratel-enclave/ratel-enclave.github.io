@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[SGX supported hardware](https://github.com/ayeks/SGX-hardware).
 
 There should be whitespace between paragraphs.
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Ratel-enclave Overview
+## Ratel Overview
 
 Commercial modern processors today have native support for trusted execution environments (TEEs) to run user-level applications in isolation from other software on the system. A prime example of such a TEE is Intel Software Guard eXtenstions (SGX). The hardware-isolated environment created by SGX, commonly referred to as an _enclave_, allows running a user-level application without trusting the operating system. Enclave memory is isolated from all other softwares on the system, even from the privileged OS or hypervisor. While being a promising hardware-rooted building block, enclaves have severely limited capabilities, such as no native access to system calls and standard OS abstractions. On the other hand real-world applications heavily relies upon OS primitives like system calls, dynamic libraries, multi-threading, multi-processing, signal handling etc.
 
@@ -32,12 +32,15 @@ One of the following operating systems should be installed on your machine.
 ## Installation and usage
 
 1.  **Build and install Intel SGX driver, modified SDK, modified PSW**
+
     <https://github.com/ratel-enclave/ratel#building-with-intelr-sgx-dependencies>
 
 2.  **Build and install Ratel**
+
     <https://github.com/ratel-enclave/ratel#building-and-setting-ratel-sgx>
 
 3.  **Run Ratel with applications**
+
     <https://github.com/ratel-enclave/ratel#how-to-run-an-application-with-ratel>
 
 ## Benchmarks and applications
