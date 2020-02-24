@@ -1,4 +1,4 @@
-title: Ratel enclave
+title: Ratel
 description: Ratel is a system which provides the capability of running unmodified Linux binaries inside Intel SGX enclaves.
 show_downloads: true
 google_analytics:

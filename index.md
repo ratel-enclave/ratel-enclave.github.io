@@ -31,29 +31,37 @@ One of the following operating systems should be installed on your machine.
 
 ## Installation and usage
 
-1.  [Build and install Intel SGX driver, modified SDK, modified PSW](https://github.com/ratel-enclave/ratel#building-with-intelr-sgx-dependencies)
-2.  [Build and install Ratel](https://github.com/ratel-enclave/ratel#building-and-setting-ratel-sgx)
-3.  [Run Ratel with applications](https://github.com/ratel-enclave/ratel#how-to-run-an-application-with-ratel)
+1.  **Build and install Intel SGX driver, modified SDK, modified PSW**
+    <https://github.com/ratel-enclave/ratel#building-with-intelr-sgx-dependencies>
+
+2.  **Build and install Ratel**
+    <https://github.com/ratel-enclave/ratel#building-and-setting-ratel-sgx>
+
+3.  **Run Ratel with applications**
+    <https://github.com/ratel-enclave/ratel#how-to-run-an-application-with-ratel>
 
 ## Benchmarks and applications
 
 Currently we have tested Ratel with more than 6 benchmark suites such as:
 
+```
   * Parsec-Splash-2
   * SPEC CPU
   * HBench-OS
   * IOzone
   * FSCQ File system
   * FSCQ single-system call
-
+```
 We have run following real world applications successfully with Ratel till now: 
 
+```
   * Privado-Torch
   * Lighttpd
   * H2O
   * Memcached
   * SQLite
   * CURL
+```
 
 The related benchmarks and applications can be seen from [here](https://github.com/ratel-enclave/ratel-tests).
 
@@ -73,9 +81,3 @@ Although Ratel surely is not full-featured or stable enough, we have demonstrate
 
 For any questions or bug reports, please feel free to write to <ratel.enclave@gmail.com> or post an issue on our GitHub repository: <https://github.com/ratel-enclave/ratel/issues>.
 
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
