@@ -4,7 +4,7 @@ layout: default
 
 ## Ratel
 
-Ratel is a new system which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel enables dynamic binary translation (DBT) inside SGX enclaves, i.e., it changes the program execution on-the-fly to be compatible with SGX abstractions. Specifically, Ratel enables [DynamoRio](https://dynamorio.org/) inside SGX enclaves. Ratel has a small trusted codebase (about 20KLOC) inside the enclave and has the potential to enable cross-platform binary compatibility.
+Ratel is a new system which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel enables dynamic binary translation (DBT) inside SGX enclaves, i.e., it changes the program execution on-the-fly to be compatible with SGX abstractions. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel has a small trusted codebase (about 20KLOC) inside the enclave and has the potential to enable cross-platform binary compatibility.
 
 ## Before we begin with Ratel
 
@@ -69,18 +69,17 @@ The related benchmarks and applications can be accessed from [here](https://gith
 ## Current status
 
 Ratel is under active development and a research prototype at this stage. Please use at your own risk. 
-Please check out the list of benchmarks / applications we have successfully tested thus far.
+Please check out the list of benchmarks / applications we have successfully tested this far.
 We invite contributions from the community and have a long wish list of features and stability improvements. Please contact us (see below) if you wish to talk to us.
 
-Features included in this prototype release : support for program loading, 220 Linux system calls, basic syscall error-handling, multi-threading, signals, and mutex synchronization primitives.
+Features included in this prototype release : support for program loading, around 220 Linux system calls, basic syscall error-handling, memory management, multi-threading, signals, and mutex synchronization primitives.
 
 ## Ratel Team
 
 We are researchers from NUS and UC Berekely:
 
   * [Shweta Shinde](https://people.eecs.berkeley.edu/~shwetas/)
-  * [Pinghai Yuan](https://www.comp.nus.edu.sg/~yuanping/)
-  * [Jinhua Cui]
+  * [Jinhua Cui](https://www.linkedin.com/in/jinhua-cui-33450a149/)
   * [Satyaki Sen](https://www.linkedin.com/in/satyaki-sen-a542a795/)
   * [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
   
