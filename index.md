@@ -90,4 +90,4 @@ For any questions or bug reports, please feel free to write to <ratel.enclave@gm
 
 ### Industry Partners
 
-* [Anqlave](https://anqlave.co)
+* [Anqlave](https://www.anqlave.co)
