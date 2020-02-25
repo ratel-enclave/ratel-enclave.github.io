@@ -4,7 +4,7 @@ layout: default
 
 ## Ratel
 
-Ratel is a new system which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel enables dynamic binary translation (DBT) inside SGX enclaves, i.e., it changes the program execution on-the-fly to be compatible with SGX abstractions. Specifically, Ratel enables DynamoRio to run inside enclaves. Ratel has a smaller trusted codebase (about 20KLOC) inside the enclave and has the potential to enable cross-platform binary compatibility.
+Ratel is a new system which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel enables dynamic binary translation (DBT) inside SGX enclaves, i.e., it changes the program execution on-the-fly to be compatible with SGX abstractions. Specifically, Ratel enables [DynamoRio](https://dynamorio.org/) inside SGX enclaves. Ratel has a small trusted codebase (about 20KLOC) inside the enclave and has the potential to enable cross-platform binary compatibility.
 
 ## Before we begin with Ratel
 
@@ -14,7 +14,7 @@ The Linux SGX developer environment comprises of hardware with SGX support, bios
 
 ### Hardware support and BIOS setting
 
-*   Check if your machine is listed in the following list of hardware which supports Intel SGX.
+*   List of hardwares which supports Intel SGX.
     [SGX supported hardware](https://github.com/ayeks/SGX-hardware).
 *   Ensure that you have enabled SGX support in your BIOS.
 *   Run the test-sgx.c code from https://github.com/ayeks/SGX-hardware to quickly check if SGX is available for your CPU and enabled in BIOS.
