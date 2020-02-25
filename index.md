@@ -2,13 +2,11 @@
 layout: default
 ---
 
-## Ratel Overview
+## Ratel
 
-Commercial modern processors today have native support for trusted execution environments (TEEs) to run user-level applications in isolation from other software on the system. A prime example of such a TEE is Intel Software Guard eXtenstions (SGX). The hardware-isolated environment created by SGX, commonly referred to as an _enclave_, allows running a user-level application without trusting the operating system. Enclave memory is isolated from all other softwares on the system, even from the privileged OS or hypervisor. While being a promising hardware-rooted building block, enclaves have severely limited capabilities, such as no native access to system calls and standard OS abstractions. On the other hand real-world applications heavily relies upon OS primitives like system calls, dynamic libraries, multi-threading, multi-processing, signal handling etc.
+Ratel is a new system which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel enables dynamic binary translation (DBT) inside SGX enclaves, i.e., it changes the program execution on-the-fly to be compatible with SGX abstractions. Specifically, Ratel enables DynamoRio to run inside enclaves. Ratel has a smaller trusted codebase (about 20KLOC) inside the enclave and has the potential to enable cross-platform binary compatibility.
 
-We present a new system called Ratel-enclave which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel-enclave gives native applications the ability to use OS level primitives while running with Intel SGX support. Ratel-enclave uses dynamic binary translation which is a mature technique to enable cross-platform binary compatibility. Using DBT to address the binary compatibility issue has the advantage of having smaller TCB than other approaches (Eg: Using Library OS inside enclaves).
-
-## Before we begin with Ratel-enclave
+## Before we begin with Ratel
 
 Ratel runs on Intel(R) SGX enclaves on Linux platforms. Ratel works on the x86-64 architecture and is currently tested on Ubuntu 16.04 (both server and desktop version), with Linux kernel versions 4.15.0. Before you start using Ratel, you should setup a stable Intel SDK developement environment. Then you can quickly test Ratel with applications. Please follow the instructions below, to setup Intel SGX environment and Ratel on your system.
 
@@ -45,7 +43,7 @@ One of the following operating systems should be installed on your machine.
 
 ## Benchmarks and applications
 
-Currently we have tested Ratel with more than 6 benchmark suites such as:
+Currently we have tested Ratel with 6 benchmark suites :
 
 ```
   * Parsec-Splash-2
@@ -55,7 +53,7 @@ Currently we have tested Ratel with more than 6 benchmark suites such as:
   * FSCQ File system
   * FSCQ single-system call
 ```
-We have run following real world applications successfully with Ratel till now: 
+We have run following real world applications successfully with Ratel : 
 
 ```
   * Privado-Torch
@@ -66,13 +64,19 @@ We have run following real world applications successfully with Ratel till now:
   * CURL
 ```
 
-The related benchmarks and applications can be seen from [here](https://github.com/ratel-enclave/ratel-tests).
+The related benchmarks and applications can be accessed from [here](https://github.com/ratel-enclave/ratel-tests).
 
 ## Current status
 
-Although Ratel surely is not full-featured or stable enough, we have demonstrated the effectiveness of Ratel with above mentioned benchmarks and applications. Ratel is actively being developed by Ratel Team for enabling more features, such as implementing multi-processing, bridging the Ratel client interface for DBI, supporting multi-language environment and additional functionalities required in various settings.
+Ratel is under active development and a research prototype at this stage. Please use at your own risk. 
+Please check out the list of benchmarks / applications we have successfully tested thus far.
+We invite contributions from the community and have a long wish list of features and stability improvements. Please contact us (see below) if you wish to talk to us.
+
+Features included in this prototype release : support for program loading, 220 Linux system calls, basic syscall error-handling, multi-threading, signals, and mutex synchronization primitives.
 
 ## Ratel Team
+
+We are researchers from NUS and UC Berekely:
 
   * [Shweta Shinde](https://people.eecs.berkeley.edu/~shwetas/)
   * [Pinghai Yuan](https://www.comp.nus.edu.sg/~yuanping/)
@@ -84,3 +88,6 @@ Although Ratel surely is not full-featured or stable enough, we have demonstrate
 
 For any questions or bug reports, please feel free to write to <ratel.enclave@gmail.com> or post an issue on our GitHub repository: <https://github.com/ratel-enclave/ratel/issues>.
 
+### Industry Partners
+
+* [Anqlave](https://anqlave.co)
