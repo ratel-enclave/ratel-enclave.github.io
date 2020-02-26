@@ -14,10 +14,9 @@ The Linux SGX developer environment comprises of hardware with SGX support, bios
 
 ### Hardware support and BIOS setting
 
-*   List of hardwares which supports Intel SGX.
-    [SGX supported hardware](https://github.com/ayeks/SGX-hardware).
+*   [SGX supported hardware](https://github.com/ayeks/SGX-hardware).
 *   Ensure that you have enabled SGX support in your BIOS.
-*   Run the test-sgx.c code from https://github.com/ayeks/SGX-hardware to quickly check if SGX is available for your CPU and enabled in BIOS.
+*   Run the test-sgx.c code from [here](https://github.com/ayeks/SGX-hardware) to quickly check if SGX is available for your CPU and enabled in BIOS.
 
 ### Software Requirements
 
@@ -82,6 +81,7 @@ We are researchers from NUS and UC Berekely:
   * [Jinhua Cui](https://www.linkedin.com/in/jinhua-cui-33450a149/)
   * [Satyaki Sen](https://www.linkedin.com/in/satyaki-sen-a542a795/)
   * [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
+  * Pinghai Yuan
   
 ## Contact us
 
