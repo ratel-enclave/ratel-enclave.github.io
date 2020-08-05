@@ -25,18 +25,21 @@ One of the following operating systems should be installed on your machine.
 *   [Ubuntu* Desktop-16.04-LTS 64bits](http://old-releases.ubuntu.com/releases/16.04.1/ubuntu-16.04.1-desktop-amd64.iso).
 *   [Ubuntu* Server-16.04-LTS 64bits](http://old-releases.ubuntu.com/releases/16.04.1/ubuntu-16.04.1-server-amd64.iso).
 
-
 ## Installation and usage
 
-1.  **Build and install Intel SGX driver, modified SDK, modified PSW**
+1.  **Build and install Intel SGX driver, modified SDK, modified PSW, Ratel with the auto installation script**
+      
+      <https://github.com/ratel-enclave/ratel#building-intelr-sgx-dependencies-and-ratel-with-auto-installation-script>
+
+2.  **Manually Build and install Intel SGX driver, modified SDK, modified PSW**
 
     <https://github.com/ratel-enclave/ratel#building-with-intelr-sgx-dependencies>
 
-2.  **Build and install Ratel**
+3.  **Manually Build and install Ratel**
 
     <https://github.com/ratel-enclave/ratel#building-and-setting-ratel-sgx>
 
-3.  **Run Ratel with applications**
+4.  **Run Ratel with applications**
 
     <https://github.com/ratel-enclave/ratel#how-to-run-an-application-with-ratel>
 
