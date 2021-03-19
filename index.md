@@ -5,11 +5,11 @@ layout: default
 ## Ratel
 
 Ratel is a new framework which enables dynamic binary translation on Intel SGX. Ratel offers ***complete interposition***, the ability to interpose on all executed instructions in the enclave and monitor all interactions with the OS. Ratel demonstrates its effectiveness by both building a binary compatibility layer for
-Linux legacy applications and enabling instrumentation options for monitoring runtime code behaviors. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel achieves better binary compatibility and has a comparable trusted codebase in the enclave. Further, Ratel is surely able to serve as a general foundation for implementing a large variety of inline security monitors to safeguard enclaves from bugs and from the untrusted OS.
+Linux legacy applications and enabling instrumentation options for monitoring runtime code behaviors. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel achieves better binary compatibility and has a comparable trusted codebase in the enclave. Further, Ratel is able to serve as a general foundation for implementing a large variety of inline security monitors to safeguard enclaves from bugs and from the untrusted OS.
 
 ## Before we begin with Ratel
 
-Ratel runs on Intel(R) SGX enclaves on Linux platforms. Ratel works on the x86-64 architecture and is currently tested on Ubuntu 16.04 (both server and desktop version), with Linux kernel versions 4.15.0. Before you start using Ratel, you should setup a stable Intel SDK developement environment. Then you can quickly test Ratel with applications. Please follow the instructions below, to setup Intel SGX environment and Ratel on your system.
+Ratel runs on Intel<sup>®</sup> SGX enclaves on Linux platforms. Ratel works on the x86-64 architecture and is currently tested on Ubuntu 16.04 (both server and desktop version), with Linux kernel versions 4.15.0. Before you start using Ratel, you should setup a stable Intel SDK developement environment. Then you can quickly test Ratel with applications. Please follow the instructions below, to setup Intel SGX environment and Ratel on your system.
 
 The Linux SGX developer environment comprises of hardware with SGX support, bios support for SGX, the SGX driver, the SGX SDK, and the SGX Platform Software. Out of these, the hardware support depends on your processor and the BIOS support is provided by the vendor. The SGX driver, SDK and PSW are provided by Intel.
 
