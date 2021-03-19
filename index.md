@@ -4,7 +4,8 @@ layout: default
 
 ## Ratel
 
-Ratel is a new system which provides the capability to run unmodified x86-64 Linux binaries within Intel SGX enclaves. Ratel enables dynamic binary translation (DBT) inside SGX enclaves, i.e., it changes the program execution on-the-fly to be compatible with SGX abstractions. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel has a small trusted codebase (about 20KLOC) inside the enclave and has the potential to enable cross-platform binary compatibility.
+Ratel is a new framework which enables dynamic binary translation on Intel SGX. Ratel offers ***complete interposition***, the ability to interpose on all executed instructions in the enclave and monitor all interactions with the OS. Ratel demonstrates its effectiveness by both offering better binary compatibility with
+Linux legacy applications and enabling instrumentation options for monitoring runtime code behaviors. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel has a comparable trusted codebase inside the enclave and is surely able to serve as a general foundation for implementing a large variety of inline security monitors to safeguard enclaves from bugs and from the untrusted OS.
 
 ## Before we begin with Ratel
 
@@ -64,9 +65,16 @@ We have run following real world applications successfully with Ratel :
   * Memcached
   * SQLite
   * CURL
+  * 138 Linux utilities
+```
+Two interpreters like Python and R languages tested :
+```
+  * R
+  * Python 2
+  * Python 3
 ```
 
-The related benchmarks and applications can be accessed from [here](https://github.com/ratel-enclave/ratel-tests).
+The related benchmarks, applications and runtimes can be accessed from [here](https://github.com/ratel-enclave/ratel-tests).
 
 ## Current status
 
@@ -74,17 +82,17 @@ Ratel is under active development and a research prototype at this stage. Please
 Please check out the list of benchmarks / applications we have successfully tested this far.
 We invite contributions from the community and have a long wish list of features and stability improvements. Please contact us (see below) if you wish to talk to us.
 
-Features included in this prototype release : support for program loading, around 220 Linux system calls, basic syscall error-handling, memory management, multi-threading, signals, and mutex synchronization primitives.
+Features included in this prototype release : support for program loading, around 220 Linux system calls, basic syscall error-handling, memory management, multi-threading, signals, and synchronization primitives.
 
 ## Ratel Team
 
-We are researchers from NUS and UC Berekely:
+We are researchers from NUS, ETH and NUDT:
 
-  * [Shweta Shinde](https://people.eecs.berkeley.edu/~shwetas/)
   * [Jinhua Cui](https://www.linkedin.com/in/jinhua-cui-33450a149/)
+  * [Pinghai Yuan](https://dblp.org/pid/153/3110.html)
   * [Satyaki Sen](https://www.linkedin.com/in/satyaki-sen-a542a795/)
+  * [Shweta Shinde](https://n.ethz.ch/~sshivaji/)
   * [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
-  * Pinghai Yuan
   
 ## Contact us
 
