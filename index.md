@@ -5,7 +5,7 @@ layout: default
 ## Ratel
 
 Ratel is a new framework which enables dynamic binary translation on Intel SGX. Ratel offers ***complete interposition***, the ability to interpose on all executed instructions in the enclave and monitor all interactions with the OS. Ratel demonstrates its effectiveness by both offering better binary compatibility with
-Linux legacy applications and enabling instrumentation options for monitoring runtime code behaviors. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel has a comparable trusted codebase inside the enclave and is surely able to serve as a general foundation for implementing a large variety of inline security monitors to safeguard enclaves from bugs and from the untrusted OS.
+Linux legacy applications and enabling instrumentation options for monitoring runtime code behaviors. Specifically, Ratel enables [DynamoRIO](https://dynamorio.org/) inside SGX enclaves. Ratel has a comparable trusted codebase in the enclave and is surely able to serve as a general foundation for implementing a large variety of inline security monitors to safeguard enclaves from bugs and from the untrusted OS.
 
 ## Before we begin with Ratel
 
