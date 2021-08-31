@@ -1,5 +1,5 @@
 title: Ratel
-description: Ratel is a general framework for instruction-level interposition on enclaved applications
+description: Ratel is a new framework for instruction-level interposition on enclaved applications
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
