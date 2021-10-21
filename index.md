@@ -88,7 +88,7 @@ Features included in this prototype release : support for program loading, aroun
 
 We are researchers from NUS, ETH and NUDT:
 
-  * [Jinhua Cui](https://www.linkedin.com/in/jinhua-cui-33450a149/)
+  * [Jinhua Cui](https://cimcs.github.io/)
   * [Pinghai Yuan](https://dblp.org/pid/153/3110.html)
   * [Satyaki Sen](https://www.linkedin.com/in/satyaki-sen-a542a795/)
   * [Shweta Shinde](https://n.ethz.ch/~sshivaji/)
